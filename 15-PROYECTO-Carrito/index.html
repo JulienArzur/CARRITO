@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/games-logo.svg" class="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2><span>Videojuegos </span></h2>
+                                <p>Ofertas de verano</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría comprar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Mas de 5.000 juegos <br>
+                        Explora los que mas te gusten</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Para pc, Playstation y Xbox<br>
+                        Desde la 2 generacion de consolas hasta las ultimas</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Hasta 12 cuotas sin interes<br>
+                        Nos adaptamos a tus necesidades</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Ultimos Lanzamientos</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/GoWII.jpg" class="imagen-curso u-full-width juegos">
+                    <div class="info-card">
+                        <h4>God of War 2</h4>
+                        <p>Ps2</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right p">$50</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Fortnite.jpg" class="imagen-curso u-full-width juegos">
+                        <div class="info-card">
+                            <h4>Fortnite</h4>
+                            <p>Pc</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio-fijo p">Gratis</p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/DarkSouls3.jfif" class="imagen-curso u-full-width juegos">
+                        <div class="info-card">
+                            <h4>Dark Souls III</h4>
+                            <p>Pc</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$99.99  <span class="u-pull-right p">$49.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Elden.jpg" class="imagen-curso u-full-width juegos">
+                    <div class="info-card">
+                        <h4>Elden Ring</h4>
+                        <p>Ps4, Ps5, Pc, Xbox One, Xbox X</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$150.99  <span class="u-pull-right p">$100</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Left4.jpg" class="imagen-curso u-full-width juegos">
+                        <div class="info-card">
+                            <h4>Left 4 Dead</h4>
+                            <p>Pc</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio-fijo p">$19.99</p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/cOD.jfif" class="imagen-curso u-full-width juegos">
+                        <div class="info-card">
+                            <h4>Call Of Duty: Black Ops III</h4>
+                            <p>Ps4, Ps5, Pc, Xbox One, Xbox X</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$49.99  <span class="u-pull-right p">$19.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Instructor</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
